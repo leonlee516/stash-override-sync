@@ -100,8 +100,6 @@ rule-providers: #!replace
 
 proxy-groups: #!replace
   - icon: https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/Static.png
-    include-all: true
-    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     name: PROXY
     type: select
     proxies:
@@ -110,6 +108,12 @@ proxy-groups: #!replace
       - SG AUTO
       - JP AUTO
       - US AUTO
+      - ALL
+  - icon: https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/Static.png
+    name: ALL
+    type: select
+    include-all: true
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
   - icon: https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/Urltest.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
